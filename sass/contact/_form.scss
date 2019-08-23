@@ -1,0 +1,62 @@
+.form {
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+
+    &__heading {
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        text-transform: capitalize;
+    }
+
+
+
+    &__input,
+    &__area {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid var(--primary-color);
+        outline: none;
+        transition: all .3s ease;
+        padding-left: 4rem;
+        grid-column: span 12;
+        margin-top: 0.5rem;
+
+        &:focus {
+            border-color: dodgerblue;
+            box-shadow: 0 0 0.5rem 0 dodgerblue;
+        }
+    }
+
+
+
+    &__name,
+    &__email {
+        position: relative;
+        grid-column: span 12;
+    }
+
+    &__message {
+        grid-column: span 12;
+    }
+
+    &__icon {
+        position: absolute;
+        bottom: 1rem;
+        left: 2rem;
+
+    }
+
+    &__btn {
+        grid-column: span 12;
+    }
+
+
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr);
+    grid-row-gap: 2em;
+    align-self: center;
+}

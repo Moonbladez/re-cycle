@@ -1,0 +1,107 @@
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 0rem;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, [col] 1fr);
+        grid-row-gap: 1rem;
+    }
+
+    &__social {
+        grid-column: span 12;
+    }
+
+    &__social-links {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+
+
+    }
+
+    &__social-icon {
+        width: 3rem;
+        transition: transform .3s;
+
+        &:focus,
+        &:hover {
+            transform: scale(1.1)
+        }
+    }
+
+    &__company {
+        grid-column: span 12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    address {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 1rem;
+
+    }
+
+    &__company-email {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-bottom: 1rem;
+
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &__company-telephone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &__payment {
+        grid-column: span 12;
+    }
+
+    &__payment-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}
+
+.copyright {
+    padding-top: 2rem;
+
+    &__text {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    &__heart {
+        color: red;
+        margin: 0 .2rem 0 .2rem;
+    }
+}

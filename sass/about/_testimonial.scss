@@ -1,0 +1,57 @@
+.testimonial {
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: var(--primary-light);
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, [col] 1fr);
+        grid-row-gap: 2rem;
+
+    }
+
+    &__heading {
+        text-align: center;
+        font-size: 1.8rem;
+        padding-bottom: 2rem;
+        text-transform: capitalize;
+    }
+
+    &__box {
+        grid-column: span 12;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+
+        img {
+            height: 8rem;
+        }
+    }
+
+    &__text {
+        font-style: italic;
+        position: relative;
+        z-index: 3;
+        padding-left: 1rem;
+
+        &:before {
+            content: '\201C';
+            position: absolute;
+            top: -1.3rem;
+            left: -0.5rem;
+            font-size: 4rem;
+            color: rgba(101, 36, 64, 0.4);
+
+        }
+
+    }
+}
+
+cite {
+    font-weight: 700;
+    font-family: var(--text-decorative);
+    padding-top: 0.5rem;
+    display: inline-block;
+}

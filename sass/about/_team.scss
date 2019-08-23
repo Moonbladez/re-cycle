@@ -1,0 +1,61 @@
+.team {
+
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, [col] 1fr);
+        grid-row-gap: 2rem;
+
+    }
+
+    &__heading {
+        text-align: center;
+        font-size: 1.8rem;
+        padding-bottom: 2rem;
+        text-transform: capitalize;
+    }
+
+    figure {
+        grid-column: span 12;
+        border: 1px solid var(--primary-color);
+        padding: 5px;
+        max-width: 500px;
+
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-evenly;
+
+
+    }
+
+    &__linkedin {
+        color: #007bb6;
+
+        &:hover,
+        &:focus {
+            color: #32506d;
+        }
+    }
+
+    &__github {
+        color: #000000;
+
+        &:hover,
+        &:focus {
+            color: #00e461;
+        }
+    }
+
+}
