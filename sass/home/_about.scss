@@ -35,7 +35,8 @@
     }
 
     &__btn {
-        grid-column: span 6;
+        grid-column: span 12;
         align-self: flex-start;
+        text-align: center;
     }
 }
