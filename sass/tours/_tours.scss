@@ -1,6 +1,6 @@
 .tours {
 
-    padding-top: 4rem;
+    padding-top: 1rem;
     padding-bottom: 4rem;
 
     &__wrapper {
@@ -28,7 +28,7 @@
         bottom: 0rem;
         left: 0;
         background-color: var(--primary-color);
-        padding: 0.5rem 2rem 0.5rem 0.5rem;
+        padding: 0.2rem;
         color: var(--white);
         text-transform: uppercase;
         width: 100%;
@@ -37,9 +37,11 @@
 
     &__card-body {
         display: grid;
-        grid-template-columns: 1max-content 1max-content;
+        grid-template-columns: auto auto;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "tours__icon--group tours__details--group""tours__icon--language tours__details--language""tours__icon--duration tours__details--duration""tours__icon--time tours__details--time""tours__icon--included tours__details--included""tours__icon--meeting tours__details--meeting""tours__btn tours__btn";
+        grid-template-areas: "tours__icon--group tours__details--group""tours__icon--language tours__details--language""tours__icon--duration tours__details--duration""tours__icon--time tours__details--time""tours__icon--included tours__details--included""tours__icon--meeting tours__details--meeting""tours__price tours__btn";
+        grid-row-gap: 0.5rem;
+        grid-column-gap: 0.5rem;
     }
 
     &__icon--group {
@@ -108,4 +110,22 @@
         margin: auto 0;
     }
 
+    &__price {
+        grid-area: tours__price;
+        margin: auto;
+        font-weight: bold;
+        color: var(--secondary-color);
+        font-size: 2rem;
+    }
+
+    &__btn {
+        grid-area: tours__btn;
+        margin: auto;
+    }
+}
+
+.text__small {
+    font-size: 0.5rem;
+    padding-right: 0.2rem;
+    font-weight: 400;
 }
