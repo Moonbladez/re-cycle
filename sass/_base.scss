@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
-$bp-largest: 75em; // 1200px;
-$bp-large: 62.5em; //1000px;
-$bp-medium: 50.5em; //800px;
-$bp-small: 37.5em; //600px;
+$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;
+$break-largest: 1200;
+
+
+
+
+
 
 :root {
     --primary-color: #246549;
@@ -58,6 +63,10 @@ h4 {
     max-width: 90vw;
     margin: auto;
     overflow: hidden;
+
+    @media screen and (min-width: $break-medium) {
+        max-width: 80vw;
+    }
 }
 
 li {
