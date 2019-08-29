@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-$break-small: 576px;
+$break-small: 425px;
 $break-medium: 768px;
-$break-large: 992px;
-$break-largest: 1200;
+$break-large: 993px;
+$break-largest: 1200px;
 
 
 
@@ -56,7 +56,12 @@ h2 {
 
 h4 {
     font-family: var(--text-decorative);
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+}
+
+h5 {
+    font-family: var(--text-decorative);
+    font-size: 1rem;
 }
 
 .container {
@@ -64,8 +69,12 @@ h4 {
     margin: auto;
     overflow: hidden;
 
-    @media screen and (min-width: $break-medium) {
-        max-width: 80vw;
+    @media screen and (min-width: $break-large) {
+        max-width: 70vw;
+    }
+
+    @media screen and (min-width: $break-largest) {
+        max-width: 60vw;
     }
 }
 
@@ -104,4 +113,8 @@ a {
         font-size: 1.2em;
         z-index: 999;
     }
+}
+
+address {
+    font-style: normal;
 }

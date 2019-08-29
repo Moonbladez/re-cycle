@@ -1,16 +1,20 @@
 .tours {
 
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(12, [col] 1fr);
         grid-row-gap: 3rem;
 
-
         @media screen and (min-width: $break-medium) {
-            grid-column-gap: 2rem;
+            grid-column-gap: 1rem;
+
+        }
+
+        @media screen and (min-width: 992px) {
+            grid-column-gap: 3rem;
         }
     }
 
@@ -19,8 +23,7 @@
 
         @media screen and (min-width: $break-medium) {
             grid-column: span 6;
-            border: 1px solid var(--primary-dark);
-            padding: 1rem;
+
         }
     }
 
@@ -31,7 +34,6 @@
 
     &__image-wrapper {
         position: relative;
-
     }
 
     &__banner {
@@ -44,100 +46,118 @@
         text-transform: uppercase;
         width: 100%;
         text-align: center;
+        padding: 0.5rem 0.2rem;
+
+        @media screen and (min-width: $break-largest) {
+            padding: 1rem 2rem;
+
+        }
     }
 
     &__card-body {
         display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: repeat (7, auto);
-        grid-template-areas: "tours__icon--group tours__details--group""tours__icon--language tours__details--language""tours__icon--duration tours__details--duration""tours__icon--time tours__details--time""tours__icon--included tours__details--included""tours__icon--meeting tours__details--meeting""tours__price tours__btn";
+        grid-template-columns: repeat(12, [col] 1fr);
         grid-row-gap: 1rem;
-        grid-column-gap: 1rem;
+        margin: 0 auto;
+        text-align: center;
         padding-top: 1rem;
     }
 
-    &__icon--group {
-        grid-area: tours__icon--group;
+    /*     &__box-wrapper {
+        grid-column: span 12;
         margin: auto;
-        color: var(--secondary-color)
     }
 
-    &__details--group {
-        grid-area: tours__details--group;
-        margin: auto 0;
+    &__header {
+        display: flex;
+
+        i {
+            padding-right: 1rem;
+        }
+    }
+ */
+
+
+    &__table {
+        grid-column: 2/12;
+        border-collapse: collapse;
     }
 
-    &__icon--language {
-        grid-area: tours__icon--language;
-        margin: auto;
-        color: var(--secondary-color)
-    }
-
-    &__details--language {
-        grid-area: tours__details--language;
-        margin: auto 0;
-    }
-
-    &__icon--duration {
-        grid-area: tours__icon--duration;
-        margin: auto;
-        color: var(--secondary-color)
-    }
-
-    &__details--duration {
-        grid-area: tours__details--duration;
-        margin: auto 0;
-    }
-
-    &__icon--time {
-        grid-area: tours__icon--time;
-        margin: auto;
-        color: var(--secondary-color)
-    }
-
-    &__details--time {
-        grid-area: tours__details--time;
-        margin: auto 0;
-    }
-
-    &__icon--included {
-        grid-area: tours__icon--included;
-        margin: auto;
-        color: var(--secondary-color)
-    }
-
-    &__details--included {
-        grid-area: tours__details--included;
-        margin: auto 0;
-    }
-
-    &__icon--meeting {
-        grid-area: tours__icon--meeting;
-        margin: auto;
-        color: var(--secondary-color)
-    }
-
-    &__details--meeting {
-        grid-area: tours__details--meeting;
-        margin: auto 0;
-    }
 
     &__price {
-        grid-area: tours__price;
-        margin: auto;
-        font-weight: bold;
-        color: var(--secondary-color);
+        grid-column: span 12;
         font-size: 2rem;
+        font-weight: 700;
+        color: var(--secondary-color);
+
+
+
+        @media screen and (min-width:$break-large) {
+            grid-column: 1/4;
+        }
     }
 
     &__btn {
-        grid-area: tours__btn;
-        margin: auto;
+
+        grid-column: span 12;
+
+        @media screen and (min-width: 992px) {
+            grid-column: 9/13;
+
+            a {
+                display: block;
+                height: 100%;
+                text-align: center;
+            }
+        }
+
+    }
+
+    &__icon {
+        color: var(--secondary-color)
+    }
+
+    &__table-row {
+        transition: all;
+        border-bottom: 1px solid #F4F4F4;
+        padding: 1rem 0;
+
+        &:hover {
+            background-color: #F4F4F4;
+            transition: all 0.6s linear;
+        }
+    }
+
+    &__table-icon {
+        vertical-align: baseline;
+        width: 20%;
+        color: var(--secondary-color);
+        padding: 1rem 0;
+
+    }
+
+    &__table-details {
+        text-align: left;
+        padding: 1rem 0;
+
     }
 }
 
+
 .text__small {
-    font-size: 0.5rem;
+    font-size: 1rem;
     padding-right: 0.2rem;
     font-weight: 400;
+    color: var(--primary-dark)
+}
+
+picture img {
+    width: 100%;
+}
+
+
+
+
+table {
+    border-collapse: separate;
 }

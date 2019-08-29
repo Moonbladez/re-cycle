@@ -6,11 +6,17 @@
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(12, [col] 1fr);
-        grid-row-gap: 1rem;
+        grid-row-gap: 3rem;
+
+        @media screen and (min-width:$break-medium) {
+            grid-row-gap: 1rem;
+
+        }
     }
 
     &__social {
         grid-column: span 12;
+        order: 1;
     }
 
     &__social-links {
@@ -39,6 +45,15 @@
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
+        padding-top: 1rem;
+
+        @media screen and (min-width:$break-medium) {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: baseline;
+
+        }
+
     }
 
     address {
@@ -49,6 +64,8 @@
         flex-direction: column;
         flex-wrap: wrap;
         padding-bottom: 1rem;
+
+
 
     }
 

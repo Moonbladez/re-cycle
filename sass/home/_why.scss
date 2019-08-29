@@ -3,16 +3,30 @@
     padding-bottom: 4rem;
     background-color: var(--primary-light);
 
+    @media screen and (min-width:$break-medium) {
+        padding: 3rem 0;
+    }
+
     &__box-wrapper {
         display: grid;
         grid-template-columns: repeat(12, [col] 1fr);
         grid-row-gap: 3rem;
+
+        @media screen and (min-width:$break-medium) {
+            align-items: baseline;
+            justify-content: space-evenly;
+        }
     }
 
     &__card {
         grid-column: span 12;
         display: grid;
         grid-row-gap: 1rem;
+
+        @media screen and (min-width:$break-medium) {
+            grid-column: span 4;
+            padding: 1rem 0;
+        }
     }
 
     &__card-body {
