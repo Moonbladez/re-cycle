@@ -13,10 +13,8 @@
         rel="stylesheet" />
     <script defer src="https://pro.fontawesome.com/releases/v5.10.1/js/all.js"
         integrity="sha384-FW78RPcSpi13vjx77nPWQIrQbNSLkPBopb0qGzLCxD2x4Kr6FA8V05C/6cpgkKPL" crossorigin="anonymous">
-        < link rel = "icon"
-        type = "image/png"
-        href = "images/logo.png" >
     </script>
+    <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 
 <body>
@@ -72,7 +70,8 @@
                     <form action="https://formspree.io/moonbladez@hotmail.com" method="POST">
                         <div class="form__name">
                             <label for="name" class="form__label">Name:
-                                <input type="text" name="name" id="Name" class="form__input" placeholder="John Smith">
+                                <input type="text" name="name" id="Name" class="form__input" placeholder="John Smith"
+                                    required>
                                 <i class="fas fa-user form__icon"></i>
                             </label>
                         </div>
@@ -109,7 +108,7 @@
                     </div>
                     <div class=" details__list details__list--address ">
                         <span><i class="fad fa-map-marker-smile fa-3x details__icon"></i></span>
-                        <address>122 Crown Street, London,W10 2JG</address>
+                        <address>122 Crown Street, <br>London, W10 2JG</address>
 
                     </div>
                 </div>
@@ -135,7 +134,6 @@
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__social">
-                    <!-- <h5>Keep In Touch</h5> -->
                     <ul class="footer__social-links">
                         <li><a href="https://facebook-com" class="footer__social-link facebook">
                                 <img src="/images/facebook.svg" alt="Facebook" class="footer__social-icon">
@@ -169,20 +167,6 @@
 
                     </address>
                 </div>
-
-
-
-                <div class="footer__payment">
-                    <ul class="footer__payment-links">
-                        <li><i class="fab fa-cc-paypal fa-2x footer__payment-icon paypal"></i></li>
-                        <li>
-                        <li><i class="fab fa-cc-mastercard fa-2x footer__payment-icon mastercard"></i>
-                        <li>
-                        </li>
-                        <li><i class="fab fa-cc-visa fa-2x footer__payment-icon visa"></i></li>
-                    </ul>
-                </div>
-
             </div>
 
             <div class="copyright">
@@ -192,7 +176,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

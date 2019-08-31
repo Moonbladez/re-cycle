@@ -55,8 +55,9 @@ li {
   list-style: none; }
 
 a {
-  color: inherit;
-  outline: none; }
+  color: inherit; }
+  a:hover, a:focus {
+    outline: 1px dotted; }
 
 .skip-main {
   left: -999px;
@@ -166,14 +167,13 @@ address {
     grid-column: span 12;
     display: grid;
     grid-row-gap: 1rem;
-    grid-template-rows: 1fr auto; }
+    grid-template-rows: max-content; }
     @media screen and (min-width: 768px) {
       .featured__card {
         grid-column: span 4;
         grid-column-gap: 1rem; } }
-  .featured__card-img {
-    width: 100%;
-    height: 100%; }
+  .featured__button {
+    align-self: flex-end; }
   .featured__card-title {
     text-transform: capitalize;
     margin-bottom: 1rem; }
@@ -193,6 +193,9 @@ address {
     padding: 0.5rem 2rem 0.5rem 0.5rem;
     color: var(--white);
     text-transform: capitalize; }
+
+img {
+  height: 100%; }
 
 .why {
   padding-top: 4rem;
@@ -317,13 +320,21 @@ form {
     display: grid;
     grid-template-columns: repeat(12, [col] 1fr);
     grid-row-gap: 3rem; }
+    @media screen and (min-width: 768px) {
+      .details__wrapper {
+        align-items: baseline;
+        grid-column-gap: 1rem; } }
   .details__list {
     grid-column: span 12;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center; }
+    align-items: center;
+    padding: 1rem 0; }
+    @media screen and (min-width: 768px) {
+      .details__list {
+        grid-column: span 4; } }
   .details__icon {
     color: var(--secondary-color); }
   .details a {
@@ -546,21 +557,15 @@ form {
     display: grid;
     grid-template-columns: repeat(12, [col] 1fr);
     grid-row-gap: 3rem; }
-    @media screen and (min-width: 768px) {
-      .footer__wrapper {
-        grid-row-gap: 1rem; } }
   .footer__social {
-    grid-column: span 12;
-    order: 1; }
+    padding-top: 2rem;
+    grid-column: span 12; }
   .footer__social-links {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
   .footer__social-icon {
-    width: 3rem;
-    transition: transform .3s; }
-    .footer__social-icon:focus, .footer__social-icon:hover {
-      transform: scale(1.1); }
+    width: 3rem; }
   .footer__company {
     grid-column: span 12;
     display: flex;
@@ -639,22 +644,32 @@ form {
     display: grid;
     grid-template-columns: repeat(12, [col] 1fr);
     grid-row-gap: 1rem; }
+    @media screen and (min-width: 993px) {
+      .history__wrapper {
+        grid-column-gap: 1rem; } }
   .history__image {
     grid-column: span 12; }
+    @media screen and (min-width: 993px) {
+      .history__image {
+        grid-column: span 6; } }
     .history__image img {
       width: 100%;
       grid-column: span 12;
       height: 100%; }
   .history__heading {
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    text-align: center; }
   .history__text {
     grid-column: span 12; }
     .history__text p:not(:last-child) {
       padding-bottom: 1rem; }
+    @media screen and (min-width: 993px) {
+      .history__text {
+        grid-column: span 6; } }
 
 .nowadays {
   padding-top: 2rem;
-  padding-bottom: 4rem; }
+  padding-bottom: 2rem; }
   .nowadays__wrapper {
     display: grid;
     grid-template-columns: repeat(12, [col] 1fr);
@@ -676,6 +691,9 @@ form {
     display: grid;
     grid-template-columns: repeat(12, [col] 1fr);
     grid-row-gap: 2rem; }
+    @media screen and (min-width: 768px) {
+      .team__wrapper {
+        grid-column-gap: 2rem; } }
   .team__heading {
     text-align: center;
     font-size: 1.8rem;
@@ -686,6 +704,12 @@ form {
     border: 1px solid var(--primary-color);
     padding: 5px;
     max-width: 500px; }
+    @media screen and (min-width: 768px) {
+      .team figure {
+        grid-column: span 6; } }
+    @media screen and (min-width: 993px) {
+      .team figure {
+        grid-column: span 4; } }
     .team figure img {
       width: 100%; }
     .team figure figcaption {
@@ -711,6 +735,9 @@ form {
     display: grid;
     grid-template-columns: repeat(12, [col] 1fr);
     grid-row-gap: 2rem; }
+    @media screen and (min-width: 993px) {
+      .testimonial__wrapper {
+        grid-column-gap: 2rem; } }
   .testimonial__heading {
     text-align: center;
     font-size: 1.8rem;
@@ -722,6 +749,10 @@ form {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap; }
+    @media screen and (min-width: 993px) {
+      .testimonial__box {
+        grid-column-gap: 2rem;
+        grid-column: span 6; } }
     .testimonial__box img {
       height: 8rem;
       border-radius: 100%; }
@@ -746,20 +777,7 @@ cite {
 
 .tours {
   padding-top: 2rem;
-  padding-bottom: 3rem;
-  /*     &__box-wrapper {
-        grid-column: span 12;
-        margin: auto;
-    }
-
-    &__header {
-        display: flex;
-
-        i {
-            padding-right: 1rem;
-        }
-    }
- */ }
+  padding-bottom: 3rem; }
   .tours__wrapper {
     display: grid;
     grid-template-columns: repeat(12, [col] 1fr);

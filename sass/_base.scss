@@ -84,7 +84,12 @@ li {
 
 a {
     color: inherit;
-    outline: none;
+
+    &:hover,
+    &:focus {
+        outline: 1px dotted;        
+    }
+
 }
 
 .skip-main {

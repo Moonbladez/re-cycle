@@ -12,7 +12,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Assistant:400,700|Playfair+Display&display=swap"
 		rel="stylesheet" />
 	<link rel="icon" type="image/png" href="images/logo.png">
-	[…]
 	<script src="https://kit.fontawesome.com/3061c3128b.js"></script>
 </head>
 
@@ -64,7 +63,11 @@
 
 					<div class="featured__card featured__card--1">
 						<div class="featured__image-wrapper">
-							<img src="images/cardiff-large.jpg" alt="featured tour" class="featured__card-img">
+							<picture>
+								<source media="(min-width: 992px)" srcset="images/cardiff-medium.jpg">
+								<source media="(min-width: 1200px)" srcset="images/cardiff-large.jpg">
+								<img src="images/cardiff-small.jpg">
+							</picture>
 							<span class="featured__banner">Best Seller</span>
 						</div>
 
@@ -75,25 +78,33 @@
 								Re-Cycle wants to give you a unique experience of time and place, setting a
 								leisurely bike ride within a historical context</p>
 						</div>
-						<a href="#" class="primary-btn  ">read more</a>
+						<a href="tours.html" class="primary-btn  ">read more</a>
 					</div>
 
 					<div class="featured__card featured__card--2">
 						<div class="featured__image-wrapper">
-							<img src="images/torquay-small.jpg" alt="featured tour" class="featured__card-img">
-							<span class="featured__banner">Selling quick</span>
+							<picture>
+								<source media="(min-width: 992px)" srcset="images/torquay-medium.jpg">
+								<source media="(min-width: 1200px)" srcset="images/torquay-large.jpg">
+								<img src="images/torquay-small.jpg">
+							</picture>
+							<span class="featured__banner">Selling Quick</span>
 						</div>
 						<div class="featured__card-body">
 							<h4 class="featured__card-title">torquay Coastal Tour</h4>
 							<p class="featured__card-text">Torquay bike tour is an exciting way of getting to know this
 								rural part of Britain, while enjoying the sea air.</p>
 						</div>
-						<a href="#" class="primary-btn featured__button">read more</a>
+						<a href="tours.html" class="primary-btn featured__button">read more</a>
 					</div>
 
 					<div class="featured__card featured__card--3">
 						<div class="featured__image-wrapper">
-							<img src="images/london.jpg" alt="featured tour" class="featured__card-img">
+							<picture>
+								<source media="(min-width: 992px)" srcset="images/london-medium.jpg">
+								<source media="(min-width: 1200px)" srcset="images/london-large.jpg">
+								<img src="images/london-small.jpg">
+							</picture>
 							<span class="featured__banner">Best Seller</span>
 						</div>
 						<div class="featured__card-body">
@@ -102,7 +113,7 @@
 								sights
 								that light up the capital's skyline from Westminster to the City of London.</p>
 						</div>
-						<a href="#" class="primary-btn featured__button">read more</a>
+						<a href="tours.html" class="primary-btn featured__button">read more</a>
 					</div>
 
 				</div>
@@ -217,20 +228,6 @@
 
 					</address>
 				</div>
-
-
-
-				<div class="footer__payment">
-					<ul class="footer__payment-links">
-						<li><i class="fab fa-cc-paypal fa-2x footer__payment-icon paypal"></i></li>
-						<li>
-						<li><i class="fab fa-cc-mastercard fa-2x footer__payment-icon mastercard"></i>
-						<li>
-						</li>
-						<li><i class="fab fa-cc-visa fa-2x footer__payment-icon visa"></i></li>
-					</ul>
-				</div>
-
 			</div>
 
 			<div class="copyright">
