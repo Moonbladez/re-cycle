@@ -742,31 +742,7 @@ iframe {
 
 .team {
   padding-top: 2rem;
-  padding-bottom: 4rem;
-  /* 
-    figure {
-        grid-column: span 12;
-        border: 1px solid var(--primary-color);
-        padding: 5px;
-        max-width: 500px;
-
-        @media screen and (min-width:$break-medium) {
-            grid-column: span 6;
-        }
-
-        @media screen and (min-width:$break-large) {
-            grid-column: span 4;
-        }
-
-        img {
-            width: 100%;
-        }
-
-        figcaption {
-            display: flex;
-            flex-direction: column;
-        }
-    } */ }
+  padding-bottom: 4rem; }
   .team__wrapper {
     display: grid;
     grid-template-columns: repeat(12, [col] 1fr);
@@ -779,25 +755,25 @@ iframe {
     font-size: 1.8rem;
     padding-bottom: 2rem;
     text-transform: capitalize; }
-  .team__card {
+  .team figure {
     grid-column: span 12;
     border: 1px solid var(--primary-color);
     padding: 5px;
     max-width: 500px; }
     @media screen and (min-width: 768px) {
-      .team__card {
+      .team figure {
         grid-column: span 6; } }
     @media screen and (min-width: 993px) {
-      .team__card {
+      .team figure {
         grid-column: span 4; } }
-    .team__card img {
+    .team figure img {
       width: 100%; }
-    .team__card figcaption {
+    .team figure figcaption {
       display: flex;
       flex-direction: column; }
   .team__social {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-evenly; }
   .team__linkedin {
     color: #007bb6; }
     .team__linkedin:hover, .team__linkedin:focus {

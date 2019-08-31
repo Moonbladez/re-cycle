@@ -15,9 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Assistant:400,700|Playfair+Display&display=swap"
         rel="stylesheet" />
     <link rel="icon" type="image/png" href="images/logo.png">
-    <script defer src="https://pro.fontawesome.com/releases/v5.10.1/js/all.js"
-        integrity="sha384-FW78RPcSpi13vjx77nPWQIrQbNSLkPBopb0qGzLCxD2x4Kr6FA8V05C/6cpgkKPL" crossorigin="anonymous">
-    </script>
+    <script src="https://kit.fontawesome.com/3061c3128b.js"></script>
 </head>
 
 <body>
@@ -31,20 +29,19 @@
             <div>
                 <nav class="navbar">
                     <ul class="navbar__list">
-                        <li><a href="https://facebook-com" class="footer__social-link facebook"
-                                aria-label="link to Facebook">
-                                <img src="/images/facebook.svg" alt="Facebook" class="footer__social-icon">
-                            </a>
+                        <img src="./images/logo.svg" alt="Re-Cycle logo" class="navbar__logo" />
+                        <li class="navbar__link">
+                            <a href="index.html" class="navbar__link-item active">Home</a>
                         </li>
-                        <li><a href="https://twitter.com" class="footer__social-link facebook"
-                                aria-label="link to Twitter">
-                                <img src="/images/twitter.svg" alt="Facebook" class="footer__social-icon">
-                            </a>
+                        <li class="navbar__link">
+                            <a href="tours.html" class="navbar__link-item">Tours</a>
                         </li>
-                        <li><a href="https://twitter.com/minimalmonkey" class="footer__social-link facebook"
-                                aria-label="link to Instagram">
-                                <img src="/images/instagram.svg" alt="Instagram" class="footer__social-icon">
-                            </a>
+                        <li class="navbar__link">
+                            <a href="about.html" class="navbar__link-item">About</a>
+                        </li>
+                        <li class="navbar__link">
+                            <a href="contact.html" class="navbar__link-item">Contact</a>
+                        </li>
                         </li>
                     </ul>
                 </nav>
@@ -111,84 +108,96 @@
             <div class="container">
                 <h2 class="team__heading">Our Team</h2>
                 <div class="team__wrapper">
-                    <figure>
-                        <img src="https://i.pravatar.cc/500?img=50" ; alt="Steve Rogers- Owner">
-                        <figcaption>
-                            <h3>Steve Rogers</h3>
-                            <p>Owner</p>
-                            <div class="team__social">
-                                <span><a href="https://www.linkedin.com/in/rebecca-young83/" tabindex="_blank"><i
-                                            class="fab fa-linkedin-in team__linkedin"></i></a></span>
-                                <span><a href="https://github.com/Moonbladez"><i
-                                            class="fab fa-github team__github"></i></a></span>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://i.pravatar.cc/500?img=22" ; alt="Peggy Carter- Owner">
-                        <figcaption>
-                            <h3>Peggy Carter</h3>
-                            <p>Owner</p>
-                            <div class="team__social">
-                                <span><a href="https://www.linkedin.com/in/rebecca-young83/" tabindex="_blank"><i
-                                            class="fab fa-linkedin-in team__linkedin"></i></a></span>
-                                <span><a href="https://github.com/Moonbladez"><i
-                                            class="fab fa-github team__github"></i></a></span>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://i.pravatar.cc/500?img=13" ; alt="Tony Stark - Tour Guide">
-                        <figcaption>
-                            <h3>Tony Stark</h3>
-                            <p>Tour Guide</p>
-                            <div class="team__social">
-                                <span><a href="https://www.linkedin.com/in/rebecca-young83/" tabindex="_blank"><i
-                                            class="fab fa-linkedin-in team__linkedin"></i></a></span>
-                                <span><a href="https://github.com/Moonbladez"><i
-                                            class="fab fa-github team__github"></i></a></span>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://i.pravatar.cc/500?img=11" ; alt="Clint Barton - Tour Guide">
-                        <figcaption>
-                            <h3>Clint Barton</h3>
-                            <p>Tour Guide</p>
-                            <div class="team__social">
-                                <span><a href="https://www.linkedin.com/in/rebecca-young83/" tabindex="_blank"><i
-                                            class="fab fa-linkedin-in team__linkedin"></i></a></span>
-                                <span><a href="https://github.com/Moonbladez"><i
-                                            class="fab fa-github team__github"></i></a></span>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://i.pravatar.cc/500?img=24" ; alt="Natalia Romanova - Tour Guide">
-                        <figcaption>
-                            <h3>Natalia Romanova</h3>
-                            <p>Owner</p>
-                            <div class="team__social">
-                                <span><a href="https://www.linkedin.com/in/rebecca-young83/" tabindex="_blank"><i
-                                            class="fab fa-linkedin-in team__linkedin"></i></a></span>
-                                <span><a href="https://github.com/Moonbladez"><i
-                                            class="fab fa-github team__github"></i></a></span>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="https://i.pravatar.cc/500?img=29" ; alt="Wanda Maximoff - Tour Guide">
-                        <figcaption>
-                            <h3>Wanda Maximoff</h3>
-                            <p>Tour Guide</p>
-                            <div class="team__social">
-                                <span><a href="https://www.linkedin.com/in/rebecca-young83/" tabindex="_blank"><i
-                                            class="fab fa-linkedin-in team__linkedin"></i></a></span>
-                                <span><a href="https://github.com/Moonbladez"><i
-                                            class="fab fa-github team__github"></i></a></span>
-                            </div>
-                        </figcaption>
-                    </figure>
+                    <div class="team__card">
+                        <figure>
+                            <img src="https://i.pravatar.cc/500?img=50" ; alt="Steve Rogers- Owner">
+                            <figcaption>
+                                <h3>Steve Rogers</h3>
+                                <p>Owner</p>
+                                <div class="team__social">
+                                    <span><a href="https://www.linkedin.com/in/rebecca-young83/" tabindex="_blank"><i
+                                                class="fab fa-linkedin-in team__linkedin"></i></a></span>
+                                    <span><a href="https://github.com/Moonbladez"><i
+                                                class="fab fa-github team__github"></i></a></span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="team__card">
+                        <figure>
+                            <img src="https://i.pravatar.cc/500?img=22" ; alt="Peggy Carter- Owner">
+                            <figcaption>
+                                <h3>Peggy Carter</h3>
+                                <p>Owner</p>
+                                <div class="team__social">
+                                    <span><a href="https://www.linkedin.com/in/rebecca-young83/" tabindex="_blank"><i
+                                                class="fab fa-linkedin-in team__linkedin"></i></a></span>
+                                    <span><a href="https://github.com/Moonbladez"><i
+                                                class="fab fa-github team__github"></i></a></span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="team__card">
+                        <figure>
+                            <img src="https://i.pravatar.cc/500?img=13" ; alt="Tony Stark - Tour Guide">
+                            <figcaption>
+                                <h3>Tony Stark</h3>
+                                <p>Tour Guide</p>
+                                <div class="team__social">
+                                    <span><a href="https://www.linkedin.com/in/rebecca-young83/" tabindex="_blank"><i
+                                                class="fab fa-linkedin-in team__linkedin"></i></a></span>
+                                    <span><a href="https://github.com/Moonbladez"><i
+                                                class="fab fa-github team__github"></i></a></span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="team__card">
+                        <figure>
+                            <img src="https://i.pravatar.cc/500?img=11" ; alt="Clint Barton - Tour Guide">
+                            <figcaption>
+                                <h3>Clint Barton</h3>
+                                <p>Tour Guide</p>
+                                <div class="team__social">
+                                    <span><a href="https://www.linkedin.com/in/rebecca-young83/" tabindex="_blank"><i
+                                                class="fab fa-linkedin-in team__linkedin"></i></a></span>
+                                    <span><a href="https://github.com/Moonbladez"><i
+                                                class="fab fa-github team__github"></i></a></span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="team__card">
+                        <figure>
+                            <img src="https://i.pravatar.cc/500?img=24" ; alt="Natalia Romanova - Tour Guide">
+                            <figcaption>
+                                <h3>Natalia Romanova</h3>
+                                <p>Owner</p>
+                                <div class="team__social">
+                                    <span><a href="https://www.linkedin.com/in/rebecca-young83/" tabindex="_blank"><i
+                                                class="fab fa-linkedin-in team__linkedin"></i></a></span>
+                                    <span><a href="https://github.com/Moonbladez"><i
+                                                class="fab fa-github team__github"></i></a></span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="team__card">
+                        <figure>
+                            <img src="https://i.pravatar.cc/500?img=29" ; alt="Wanda Maximoff - Tour Guide">
+                            <figcaption>
+                                <h3>Wanda Maximoff</h3>
+                                <p>Tour Guide</p>
+                                <div class="team__social">
+                                    <span><a href="https://www.linkedin.com/in/rebecca-young83/" tabindex="_blank"><i
+                                                class="fab fa-linkedin-in team__linkedin"></i></a></span>
+                                    <span><a href="https://github.com/Moonbladez"><i
+                                                class="fab fa-github team__github"></i></a></span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>

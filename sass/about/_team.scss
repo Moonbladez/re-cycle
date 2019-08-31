@@ -21,7 +21,7 @@
         text-transform: capitalize;
     }
 
-    figure {
+    &__card {
         grid-column: span 12;
         border: 1px solid var(--primary-color);
         padding: 5px;
@@ -45,9 +45,34 @@
         }
     }
 
+    /* 
+    figure {
+        grid-column: span 12;
+        border: 1px solid var(--primary-color);
+        padding: 5px;
+        max-width: 500px;
+
+        @media screen and (min-width:$break-medium) {
+            grid-column: span 6;
+        }
+
+        @media screen and (min-width:$break-large) {
+            grid-column: span 4;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            display: flex;
+            flex-direction: column;
+        }
+    } */
+
     &__social {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
 
 
     }
