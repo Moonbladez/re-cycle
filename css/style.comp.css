@@ -552,7 +552,7 @@ iframe {
 
 .hero:before {
   content: "";
-  background: url(../../images/home-hero.jpg) no-repeat center center/cover;
+  background: url(../images/home-hero.jpg) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -567,7 +567,7 @@ iframe {
   position: relative; }
   .contact__hero ::before {
     content: "";
-    background: url(../../images/contact-hero.jpg) no-repeat center center/cover;
+    background: url(../images/contact-hero.jpg) no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -582,7 +582,7 @@ iframe {
   position: relative; }
   .about__hero ::before {
     content: "";
-    background: url(/images/about-hero.jpg) no-repeat center center/cover;
+    background: url(../images/about-hero.jpg) no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -597,7 +597,7 @@ iframe {
   position: relative; }
   .tours__hero ::before {
     content: "";
-    background: url(/images/tours-hero.jpg) no-repeat center center/cover;
+    background: url(../images/tours-hero.jpg) no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -742,7 +742,31 @@ iframe {
 
 .team {
   padding-top: 2rem;
-  padding-bottom: 4rem; }
+  padding-bottom: 4rem;
+  /* 
+    figure {
+        grid-column: span 12;
+        border: 1px solid var(--primary-color);
+        padding: 5px;
+        max-width: 500px;
+
+        @media screen and (min-width:$break-medium) {
+            grid-column: span 6;
+        }
+
+        @media screen and (min-width:$break-large) {
+            grid-column: span 4;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            display: flex;
+            flex-direction: column;
+        }
+    } */ }
   .team__wrapper {
     display: grid;
     grid-template-columns: repeat(12, [col] 1fr);
@@ -755,25 +779,25 @@ iframe {
     font-size: 1.8rem;
     padding-bottom: 2rem;
     text-transform: capitalize; }
-  .team figure {
+  .team__card {
     grid-column: span 12;
     border: 1px solid var(--primary-color);
     padding: 5px;
     max-width: 500px; }
     @media screen and (min-width: 768px) {
-      .team figure {
+      .team__card {
         grid-column: span 6; } }
     @media screen and (min-width: 993px) {
-      .team figure {
+      .team__card {
         grid-column: span 4; } }
-    .team figure img {
+    .team__card img {
       width: 100%; }
-    .team figure figcaption {
+    .team__card figcaption {
       display: flex;
       flex-direction: column; }
   .team__social {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-around; }
   .team__linkedin {
     color: #007bb6; }
     .team__linkedin:hover, .team__linkedin:focus {
