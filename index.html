@@ -21,7 +21,7 @@
 <body>
 	<a href="#main" class="skip-main">Skip to main content</a>
 	<div class="menu-wrap">
-		<input type="checkbox" class="toggler" />
+		<input type="checkbox" class="toggler" name="navbar-checkbox" aria-label="navbar checkbox" />
 		<div class="hamburger">
 			<div></div>
 		</div>
@@ -69,7 +69,7 @@
 							<picture>
 								<source media="(min-width: 992px)" srcset="images/cardiff-medium.jpg">
 								<source media="(min-width: 1200px)" srcset="images/cardiff-large.jpg">
-								<img src="images/cardiff-small.jpg">
+								<img src="images/cardiff-small.jpg" alt="Cardiff bike tour">
 							</picture>
 							<span class="featured__banner">Best Seller</span>
 						</div>
@@ -89,7 +89,7 @@
 							<picture>
 								<source media="(min-width: 992px)" srcset="images/torquay-medium.jpg">
 								<source media="(min-width: 1200px)" srcset="images/torquay-large.jpg">
-								<img src="images/torquay-small.jpg">
+								<img src="images/torquay-small.jpg" alt="Torquay bike tour">
 							</picture>
 							<span class="featured__banner">Selling Quick</span>
 						</div>
@@ -106,7 +106,7 @@
 							<picture>
 								<source media="(min-width: 992px)" srcset="images/london-medium.jpg">
 								<source media="(min-width: 1200px)" srcset="images/london-large.jpg">
-								<img src="images/london-small.jpg">
+								<img src="images/london-small.jpg" alt="London bike tour">
 							</picture>
 							<span class="featured__banner">Best Seller</span>
 						</div>
@@ -127,8 +127,6 @@
 		<!-- why tours -->
 		<section class="why">
 			<div class="container">
-				<!-- <h2 class="why__heading">Reason why to use Re-Cycle</h2> -->
-
 				<div class="why__box-wrapper">
 					<div class="why__card why__card--1">
 						<div class="why__image-wrapper">
@@ -147,16 +145,12 @@
 							<h4 class="why__card-title">Environmentaly Friendly</h4>
 						</div>
 					</div>
-
-
 					<div class="why__card why__card--3">
 						<div class="why__image-wrapper">
 							<i class="fad fa-piggy-bank fa-4x why__icon"></i>
 						</div>
 						<div class="why__card-body">
 							<h4 class="why__card-title">free cancellations</h4>
-							<!-- 						<p class="why__card-text">We understand that life gets in the way. So if you cancel your
-							booking more than 24hours beforem, you will receive a <em>full refund</em></p> -->
 						</div>
 					</div>
 
@@ -199,15 +193,18 @@
 			<div class="footer__wrapper">
 				<div class="footer__social">
 					<ul class="footer__social-links">
-						<li><a href="https://facebook-com" class="footer__social-link facebook">
+						<li><a href="https://facebook-com" class="footer__social-link facebook"
+								aria-label="link to Facebook">
 								<img src="/images/facebook.svg" alt="Facebook" class="footer__social-icon">
 							</a>
 						</li>
-						<li><a href="https://twitter.com" class="footer__social-link facebook">
+						<li><a href="https://twitter.com" class="footer__social-link facebook"
+								aria-label="link to Twitter">
 								<img src="/images/twitter.svg" alt="Facebook" class="footer__social-icon">
 							</a>
 						</li>
-						<li><a href="https://twitter.com/minimalmonkey" class="footer__social-link facebook">
+						<li><a href="https://twitter.com/minimalmonkey" class="footer__social-link facebook"
+								aria-label="link to Instagram">
 								<img src="/images/instagram.svg" alt="Instagram" class="footer__social-icon">
 							</a>
 						</li>

@@ -21,7 +21,7 @@
 <body>
     <a href="#main" class="skip-main">Skip to main content</a>
     <div class="menu-wrap">
-        <input type="checkbox" class="toggler" />
+        <input type="checkbox" class="toggler" name="navbar-checkbox" aria-label="navbar checkbox" />
         <div class="hamburger">
             <div></div>
         </div>
@@ -29,7 +29,7 @@
             <div>
                 <nav class="navbar">
                     <ul class="navbar__list">
-                        <img src="./images/logo.svg" alt="Re-Cycle logo" />
+                        <img src="./images/logo.svg" alt="Re-Cycle logo" class="navbar__logo" />
                         <li class="navbar__link">
                             <a href="index.html" class="navbar__link-item ">Home</a>
                         </li>
@@ -139,15 +139,18 @@
             <div class="footer__wrapper">
                 <div class="footer__social">
                     <ul class="footer__social-links">
-                        <li><a href="https://facebook-com" class="footer__social-link facebook">
+                        <li><a href="https://facebook-com" class="footer__social-link facebook"
+                                aria-label="link to Facebook">
                                 <img src="/images/facebook.svg" alt="Facebook" class="footer__social-icon">
                             </a>
                         </li>
-                        <li><a href="https://twitter.com" class="footer__social-link facebook">
+                        <li><a href="https://twitter.com" class="footer__social-link facebook"
+                                aria-label="link to Twitter">
                                 <img src="/images/twitter.svg" alt="Facebook" class="footer__social-icon">
                             </a>
                         </li>
-                        <li><a href="https://twitter.com/minimalmonkey" class="footer__social-link facebook">
+                        <li><a href="https://twitter.com/minimalmonkey" class="footer__social-link facebook"
+                                aria-label="link to Instagram">
                                 <img src="/images/instagram.svg" alt="Instagram" class="footer__social-icon">
                             </a>
                         </li>
